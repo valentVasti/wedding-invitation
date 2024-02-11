@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'script';
+    src: url("./assets/fonts/the_wedding_signature/TheWeddingSignature-Regular.woff") format("woff"),
+      url("./assets/fonts/the_wedding_signature/TheWeddingSignature-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
