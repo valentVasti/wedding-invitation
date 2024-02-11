@@ -1,7 +1,23 @@
 @font-face {
-    font-family: 'script';
-    src: url("./assets/fonts/the_wedding_signature/TheWeddingSignature-Regular.woff") format("woff"),
-      url("./assets/fonts/the_wedding_signature/TheWeddingSignature-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "script";
+  src: url("./assets/fonts/the_wedding_signature/TheWeddingSignature-Regular.woff")
+      format("woff"),
+    url("./assets/fonts/the_wedding_signature/TheWeddingSignature-Regular.woff2")
+      format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tiramisu";
+  src: url("./assets/fonts/tiramisu/Tiramisu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "callista";
+  src: url("./assets/fonts/calista/Callista.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

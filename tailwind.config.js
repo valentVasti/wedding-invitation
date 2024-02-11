@@ -12,6 +12,11 @@ export default {
         "silver-palette": "#92A5AE",
         "white-palette": "#EAEBED",
       },
+      fontFamily: {
+        "callista" : "callista",
+        "tiramisu" : "tiramisu",
+        "script" : "script",
+      }
     },
   },
   plugins: [],
