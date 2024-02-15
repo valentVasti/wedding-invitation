@@ -16,6 +16,9 @@ export default {
         "callista" : "callista",
         "tiramisu" : "tiramisu",
         "script" : "script",
+        "modern-sans" : "modern-sans",
+        "autography" : "autography",
+        "watermint" : "watermint"
       }
     },
   },

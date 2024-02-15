@@ -7,14 +7,14 @@ const TimelineItem = ({ storyPosition, action, date, desc }) => {
 
     return (
         <>
-            <div className='w-full h-96 flex relative gap-10'>
+            <div className='w-full h-[500px] flex relative gap-10'>
                 {storyPosition === "left" ? (
                     <>
                         <div className='h-full w-1/2 bg-white relative'>
-                            <div className='size-full bg-transparent z-10 absolute px-20 font-serif text-right flex flex-col justify-center gap-5'>
-                                <div id='action' className='text-8xl font-tiramisu text-black-palette'>{action}</div>
+                            <div className='size-full bg-transparent z-10 absolute pe-14 ps-5 font-serif text-right flex flex-col justify-center gap-10'>
                                 <div id='date' className='text-6xl font-serif'>{date}</div>
-                                <div id='desc' >{desc}</div>
+                                <div id='action' className='text-8xl font-autography text-black-palette'>{action}</div>
+                                <div id='desc' className='font-modern-sans font-semibold text-lg'>{desc}</div>
                             </div>
                             <img src={basePatternSvg} className='absolute top-0 h-full w-full object-cover z-0 opacity-70' />
                         </div>
@@ -28,10 +28,10 @@ const TimelineItem = ({ storyPosition, action, date, desc }) => {
                             <img src={timelineImg} className='h-full w-full object-cover' />
                         </div>
                         <div className='h-full w-1/2 bg-white relative'>
-                            <div className='size-full bg-transparent z-10 absolute px-20 font-serif text-left flex flex-col justify-center gap-5'>
-                                <div id='action' className='text-8xl font-tiramisu text-black-palette'>{action}</div>
+                            <div className='size-full bg-transparent z-10 absolute pe-5 ps-14 py-2 font-serif text-left flex flex-col justify-center gap-10'>
                                 <div id='date' className='text-6xl font-serif'>{date}</div>
-                                <div id='desc' >{desc}</div>
+                                <div id='action' className='text-8xl font-autography text-black-palette'>{action}</div>
+                                <div id='desc' className='font-modern-sans font-semibold text-lg'>{desc}</div>
                             </div>
                             <img src={basePatternSvg} className='absolute top-0 h-full w-full object-cover z-0 opacity-70' />
                         </div>
@@ -40,7 +40,7 @@ const TimelineItem = ({ storyPosition, action, date, desc }) => {
 
                 <div className='absolute h-full w-full bg-transparent flex justify-center items-center z-10'>
                     <div className='size-20 bg-yellow-palette rounded-full p-2 border-[10px] border-white z-30'>
-                        <img src={flower}/>
+                        <img src={flower} />
                     </div>
                     <div className='absolute h-full w-full bg-transparent flex justify-center items-center z-20'>
                         <div className='w-2 h-full bg-yellow-palette'></div>

@@ -6,6 +6,7 @@ import LandingSection from './LandingSection'
 import CouplesSection from './CouplesSection'
 import QuotesSection from './QuotesSection'
 import TimelineSection from './TimelineSection'
+import FooterSection from './FooterSection'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <CouplesSection />
       <QuotesSection />
       <TimelineSection />
+      <FooterSection/>
     </React.StrictMode>
   </>
 )

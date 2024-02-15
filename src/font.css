@@ -21,3 +21,24 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "modern-sans";
+  src: url("./assets/fonts/modern_sans/ModernSans-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "watermint";
+  src: url("./assets/fonts/watermint/WatermintScript_PERSONAL_USE_ONLY.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "autography";
+  src: url("./assets/fonts/autography/Autography.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
