@@ -12,7 +12,7 @@ import EnvelopePage from './components/EnvelopePage'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <React.StrictMode>
-      <EnvelopePage/>
+      {/* <EnvelopePage/> */}
       <LandingSection />
       <CouplesSection />
       <QuotesSection />
