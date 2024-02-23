@@ -1,5 +1,5 @@
 import React from 'react'
-import RingLogo from './assets/image/ring-logo.jpg'
+import RingLogo from '../assets/image/ring-logo.jpg'
 
 const CouplesSection = () => {
     return (

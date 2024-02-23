@@ -13,13 +13,13 @@ export default {
         "white-palette": "#EAEBED",
       },
       fontFamily: {
-        "callista" : "callista",
-        "tiramisu" : "tiramisu",
-        "script" : "script",
-        "modern-sans" : "modern-sans",
-        "autography" : "autography",
-        "watermint" : "watermint"
-      }
+        callista: "callista",
+        tiramisu: "tiramisu",
+        script: "script",
+        "modern-sans": "modern-sans",
+        autography: "autography",
+        watermint: "watermint",
+      },
     },
   },
   plugins: [],

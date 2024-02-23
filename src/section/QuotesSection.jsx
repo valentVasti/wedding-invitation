@@ -1,6 +1,6 @@
 import React from 'react'
-import basePatternSvg from './assets/image/base-pattern.svg'
-import miniQuotesPattern from './assets/image/mini-quotes-pattern.svg'
+import basePatternSvg from '../assets/image/base-pattern.svg'
+import miniQuotesPattern from '../assets/image/mini-quotes-pattern.svg'
 
 const QuotesSection = () => {
     return (
