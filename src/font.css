@@ -42,3 +42,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "yustine";
+  src: url("./assets/fonts/yustine_signature/YustineSignature.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

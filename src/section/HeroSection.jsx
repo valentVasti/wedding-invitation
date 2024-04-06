@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import landingImage from '../assets/image/landing-img-3.jpg'
+import landingImage from '../assets/image/prewed/hero-4.jpg'
 import flower from '../assets/image/flower-black.png'
 import pattern from '../assets/image/pattern-yellow-svg.svg'
 import patternMini from '../assets/image/pattern-mini.png'
@@ -25,7 +25,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className='bg-white w-full h-screen'>
+    <section className='bg-white w-full h-screen'>
       <div className='h-full w-full relative overflow-hidden'>
         <div className='absolute top-0 left-0 w-full h-screen bg-black-palette flex justify-between'>
           {/* <div ref={patternLeft} className='size-[400px] -translate-x-full z-40 pattern-left will-change-transform'>
@@ -41,8 +41,8 @@ const HeroSection = () => {
 
         <div className='relative top-0 text-white bg-transparent h-full w-full flex flex-col justify-center items-center z-30'>
           <div ref={coupleImage} className='size-[500px] flex relative justify-center items-center z-20 bg-transparent will-change-transform'>
-            <img src={landingImage} className='size-full object-cover object-center rounded-full shadow-gray-950 shadow-xl will-change-transform' />
-            <img src={framePhoto} className='size-[550px] object-cover object-center absolute -translate-x-2 -rotate-[90deg] will-change-transform' />
+            <img src={landingImage} className='size-full object-cover rounded-full shadow-gray-950 shadow-xl will-change-transform -rotate-2 z-10' />
+            {/* <img src={framePhoto} className='size-[550px] object-cover object-center absolute -translate-x-2 -rotate-[90deg] will-change-transform z-0' /> */}
           </div>
           <div className='text-6xl font-[script] tracking-wider mt-12 animate-text will-change-transform'>Wening & Leo</div>
           <div className='text-7xl font-serif tracking-wider animate-text will-change-transform'>We're Getting Married!</div>
@@ -50,7 +50,7 @@ const HeroSection = () => {
       </div>
       <div>
       </div>
-    </div>
+    </section>
   )
 }
 

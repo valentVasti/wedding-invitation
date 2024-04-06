@@ -8,6 +8,7 @@ import TimelineSection from './section/TimelineSection'
 import FooterSection from './section/FooterSection'
 import EnvelopePage from './components/EnvelopePage'
 import HeroSection from './section/HeroSection'
+import VersesSection from './section/VersesSection'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>

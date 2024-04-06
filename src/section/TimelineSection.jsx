@@ -54,9 +54,8 @@ const TimelineSection = () => {
     data.map((data) => console.log(data.position));
 
     return (
-        <div className='w-full h-auto text-center py-10 flex flex-col justify-center items-center'>
-            <h1 className='text-7xl font-serif mb-20 text-black'>Our Story</h1>
-            <div className='flex flex-col justify-center items-center h-auto w-[1400px]'>
+        <section className='w-full h-auto text-center py-10 flex flex-col justify-center items-center'>
+            {/* <div className='flex flex-col justify-center items-center h-auto w-[1400px]'>
                 <div className='size-16 bg-yellow-palette rounded-full p-2'>
                     <img src={flower} />
                 </div>
@@ -64,79 +63,8 @@ const TimelineSection = () => {
                 {data.map((data) => (
                     <TimelineItem storyPosition={data.position} action={data.action} date={data.date} desc={data.desc} />
                 ))}
-                {/* {mainData.map((data) => (
-                    <MainTimelineItem action={data.action} date={data.date} location={data.location} />
-                ))} */}
-
-                {/* <div className='w-2 h-40 bg-yellow-palette'></div>
-                <div className='w-full h-[720px] relative'>
-                    <div className='absolute z-20 w-full h-auto font-serif text-left flex flex-col justify-center items-center gap-5 text-white pt-14 p-10 overflow-hidden bg-yellow-palette'>
-                        <div className='bg-black-palette w-full h-auto relative flex flex-col justify-evenly items-center p-10 pt-24 text-center gap-20'>
-                            <div id='action' className='text-8xl font-tiramisu relative z-10'>Wedding Day!</div>
-                            <div id='date' className='text-6xl font-serif relative z-10 flex justify-evenly h-auto gap-5 '>
-                                <div id='location' className='w-1/3 h-fit'>
-                                    <img src={flower} className='h-40 w-full object-contain' />
-                                    <div className='h-24 flex justify-center items-center mt-10'>
-                                        <p className='text-4xl'>Tempat Resepsi</p>
-                                    </div>
-                                </div>
-                                <div id='date' className='w-1/3 h-fit relative'>
-                                    <img src={church} className='h-40 w-full object-contain' />
-                                    <img src={framePhoto} className='absolute top-0 left-1/2 -translate-x-1/2 h-48 w-auto object-cover z-10' />
-                                    <div className='h-24 flex justify-center items-center mt-10'>
-                                        <p className='text-4xl'>15 Juni 2024</p>
-                                    </div>
-                                </div>
-                                <div id='time' className='w-1/3 h-fit'>
-                                    <img src={suit} className='h-40 w-full object-contain' />
-                                    <div className='h-24 flex justify-center items-center mt-10'>
-                                        <p className='text-4xl'>14:00 WIB</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src={basePatternSvgBlack} className='absolute top-0 h-full w-full object-cover z-0 opacity-70' />
-                        </div>
-                    </div>
-                    <div className='absolute top-0 h-fit w-full bg-transparent flex justify-center items-center z-30'>
-                        <div className='absolute -top-10 size-20 bg-yellow-palette rounded-full p-2 z-30 border-[10px] border-white '>
-                            <img src={suit} />
-                        </div>
-                    </div>
-                </div> */}
-            </div>
-            {/* ide 1 */}
-            {/* <div className='w-2 h-24 bg-yellow-palette'></div>
-            <div className='w-full h-auto relative'>
-                <div className='bg-black-palette w-full h-auto relative flex flex-col justify-evenly items-center p-10 text-center overflow-hidden text-white pt-28'>
-                    <div className='flex flex-col justify-evenly items-center h-[200px]'>
-                        <div id='action' className='text-7xl font-autography relative z-10 h-1/3 flex items-center justify-center'>Siraman</div>
-                        <div id='date' className='text-3xl font-serif relative z-10 h-1/3 flex items-center justify-center'>14 Juni 2024 | 15.00 WIB</div>
-                        <div id='desc' className='relative font-modern-sans z-10 text-xl h-1/3 flex items-center justify-center'>Jenak, Yogyakarta</div>
-                    </div>
-                    <div className='bg-white w-1 h-32 mt-5 z-30 relative my-10'></div>
-                    <div className='flex flex-col justify-evenly items-center h-[200px]'>
-                        <div id='action' className='text-7xl font-autography relative z-10 h-1/3 flex items-center justify-center'>Sakramen</div>
-                        <div id='date' className='text-3xl font-serif relative z-10 h-1/3 flex items-center justify-center'>14 Juni 2024 | 15.00 WIB</div>
-                        <div id='desc' className='relative font-modern-sans z-10 text-xl h-1/3 flex items-center justify-center'>Jenak, Yogyakarta</div>
-                    </div>
-                    <div className='bg-white w-1 h-32 mt-5 z-30 relative my-10'></div>
-                    <div className='flex flex-col justify-evenly items-center h-[200px]'>
-                        <div id='action' className='text-7xl font-autography relative z-10 h-1/3 flex items-center justify-center'>Wedding Day!</div>
-                        <div id='date' className='text-3xl font-serif relative z-10 h-1/3 flex items-center justify-center'>14 Juni 2024 | 15.00 WIB</div>
-                        <div id='desc' className='relative font-modern-sans z-10 text-xl h-1/3 flex items-center justify-center'>Jenak, Yogyakarta</div>
-                    </div>
-
-                    <img src={basePatternSvgBlack} className='absolute top-0 h-full w-full object-cover z-0 opacity-70' />
-                    <img src={miniQuotesPattern} className='absolute top-0 left-0 h-[400px] -translate-x-11 -rotate-6 object-cover z-0 transform scale-[-1]' />
-                    <img src={miniQuotesPattern} className='absolute top-0 right-0 h-[400px] translate-x-11 -rotate-6 object-cover z-0' />
-                </div>
-                <div className='absolute top-0 h-fit w-full bg-transparent flex justify-center items-center z-30'>
-                    <div className='absolute -top-10 size-20 bg-yellow-palette rounded-full p-2 z-30 border-[10px] border-white '>
-                        <img src={flower} />
-                    </div>
-                </div>
             </div> */}
-            <div className='w-2 h-44 bg-yellow-palette'></div>
+            {/* <div className='w-2 h-44 bg-yellow-palette'></div> */}
             <div className='w-full h-auto relative'>
                 <div className='bg-black-palette w-full h-auto relative flex flex-col justify-evenly items-center p-10 pb-24 overflow-hidden text-white pt-28 gap-28'>
                     <div className='flex justify-evenly items-end h-[200px] w-[1000px] gap-24 relative'>
@@ -203,7 +131,7 @@ const TimelineSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
