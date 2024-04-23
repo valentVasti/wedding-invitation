@@ -49,3 +49,17 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "quicksand";
+  src: url("./assets/fonts/quicksand/Quicksand_Book.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "quicksand-bold";
+  src: url("./assets/fonts/quicksand/Quicksand_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

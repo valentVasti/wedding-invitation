@@ -9,6 +9,7 @@ import FooterSection from './section/FooterSection'
 import EnvelopePage from './components/EnvelopePage'
 import HeroSection from './section/HeroSection'
 import VersesSection from './section/VersesSection'
+import GuestInvitationSection from './section/GuestInvitationSection'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
@@ -18,8 +19,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <HeroSection />
         <CouplesSection />
         <QuotesSection />
+        <GuestInvitationSection />
         <TimelineSection />
-        <FooterSection />
+        {/* <FooterSection /> */}
       </div>
     </React.StrictMode>
   </>

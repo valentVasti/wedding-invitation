@@ -21,6 +21,8 @@ export default {
         autography: "autography",
         watermint: "watermint",
         yustine: "yustine",
+        quicksand: "quicksand",
+        "quicksand-bold": "quicksand-bold",
       },
     },
   },
