@@ -48,8 +48,8 @@ const HeroSection = () => {
             {/* <img src={framePhoto} className='size-[550px] object-cover object-center absolute -translate-x-2 -rotate-[90deg] will-change-transform z-0' /> */}
           </div>
           <img src={yellowDivider} className='w-32 md:w-60 my-5 animate-text'/>
-          <div className='text-center text-4xl md:text-6xl font-quicksand mb-4 animate-text will-change-transform'>Wening & Leo</div>
-          <div className='text-base text-center md:text-3xl font-quicksand animate-text will-change-transform'>We're Getting Married!</div>
+          <div className='text-center text-4xl md:text-6xl font-quicksand mb-4 animate-text will-change-transform opacity-0 translate-y-20'>Wening & Leo</div>
+          <div className='text-base text-center md:text-3xl font-quicksand animate-text will-change-transform opacity-0 translate-y-20'>We're Getting Married!</div>
         </div>
       </div>
       <div>
