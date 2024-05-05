@@ -63,3 +63,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "lt-perfume";
+  src: url("./assets/fonts/lt_perfume/LTPerfume-2.ttf") format("trueType");
+  font-weight: normal;
+  font-style: normal;
+}

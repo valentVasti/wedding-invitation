@@ -11,7 +11,7 @@ export default {
         "black-palette": "#131313",
         "silver-palette": "#92A5AE",
         "white-palette": "#EAEBED",
-        "gray-palette" : "#8F8F8F" 
+        "gray-palette": "#8F8F8F",
       },
       fontFamily: {
         callista: "callista",
@@ -23,6 +23,7 @@ export default {
         yustine: "yustine",
         quicksand: "quicksand",
         "quicksand-bold": "quicksand-bold",
+        "lt-perfume": "lt-perfume",
       },
     },
   },

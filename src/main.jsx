@@ -10,17 +10,13 @@ import EnvelopePage from './components/EnvelopePage'
 import HeroSection from './section/HeroSection'
 import VersesSection from './section/VersesSection'
 import GuestInvitationSection from './section/GuestInvitationSection'
+import MainLayout from './MainLayout'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <React.StrictMode>
-      {/* <EnvelopePage/> */}
       <div className='overflow-x-hidden'>
-        <HeroSection />
-        <CouplesSection />
-        <QuotesSection />
-        <GuestInvitationSection />
-        <TimelineSection />
+        <MainLayout />
         {/* <FooterSection /> */}
       </div>
     </React.StrictMode>

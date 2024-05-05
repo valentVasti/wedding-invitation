@@ -6,6 +6,8 @@ import flower from '../assets/image/flower-black.png'
 import pattern from '../assets/image/pattern-yellow-svg.svg'
 import patternMini from '../assets/image/pattern-mini.png'
 import basePatternSvg from '../assets/image/base-pattern-white.svg'
+import yellowDivider from '../assets/image/yellow-divider.png'
+import yellowBird from '../assets/image/bird-yellow.png'
 import framePhoto from '../assets/image/frame-photo-2.svg'
 import Pattern from '../components/Pattern'
 
@@ -27,25 +29,27 @@ const HeroSection = () => {
   return (
     <section className='bg-white w-full h-screen'>
       <div className='h-full w-full relative overflow-hidden'>
-        <div className='absolute top-0 left-0 w-full h-screen bg-white flex justify-between'>
+        <div className='absolute top-0 left-0 w-full h-screen flex justify-between'>
           {/* <div ref={patternLeft} className='size-[400px] -translate-x-full z-40 pattern-left will-change-transform'>
             <Pattern />
           </div>
           <div ref={patternRight} className='size-[400px] translate-x-full transform scale-x-[-1] z-40 pattern-right will-change-transform'>
             <Pattern />
           </div> */}
-          <img ref={patternLeft} src={pattern} className='size-[150px] lg:size-[400px] -translate-x-full z-40 pattern-left will-change-transform' />
-          <img ref={patternRight} src={pattern} className='size-[150px]  lg:size-[400px] translate-x-full transform scale-x-[-1] z-40 pattern-right will-change-transform' />
+          <img ref={patternLeft} src={pattern} className='size-[150px] lg:size-[400px] -translate-x-500 -translate-y-500 opacity-0 z-40 pattern-left will-change-transform' />
+          <img ref={patternRight} src={pattern} className='size-[150px]  lg:size-[400px] translate-x-500 -translate-y-500 opacity-0 transform scale-x-[-1] z-40 pattern-right will-change-transform' />
         </div>
-        <img ref={background} src={basePatternSvg} className='h-full w-full object-cover absolute top-0 z-0 will-change-transform' />
+        <img ref={background} src={basePatternSvg} className='scale-[1.15] opacity-0 h-full w-full object-cover absolute top-0 z-0 will-change-transform' />
 
         <div className='relative top-0 text-black bg-transparent h-full w-full flex flex-col justify-center items-center z-30'>
-          <div ref={coupleImage} className='size-[250px] md:size-[500px] flex relative justify-center items-center z-20 bg-transparent will-change-transform'>
-            <img src={landingImage} className='size-full object-cover rounded-full  shadow-xl will-change-transform -rotate-2 z-10' />
+          {/* <img src={yellowBird} className='h-10 mb-6 object-cover md:hidden' /> */}
+          <div ref={coupleImage} className='opacity-0 size-[250px] md:size-[500px] flex relative justify-center items-center z-20 bg-transparent will-change-transform translate-y-[20]'>
+            <img src={landingImage} className='size-full object-cover rounded-full shadow-xl will-change-transform -rotate-2 z-10' />
             {/* <img src={framePhoto} className='size-[550px] object-cover object-center absolute -translate-x-2 -rotate-[90deg] will-change-transform z-0' /> */}
           </div>
-          <div className='text-6xl md:text-8xl font-[script] tracking-wider mt-12 animate-text will-change-transform'>Wening & Leo</div>
-          <div className='text-4xl text-center md:text-7xl font-serif tracking-wider animate-text will-change-transform'>We're Getting Married!</div>
+          <img src={yellowDivider} className='w-32 md:w-60 my-5 animate-text'/>
+          <div className='text-center text-4xl md:text-6xl font-quicksand mb-4 animate-text will-change-transform'>Wening & Leo</div>
+          <div className='text-base text-center md:text-3xl font-quicksand animate-text will-change-transform'>We're Getting Married!</div>
         </div>
       </div>
       <div>
