@@ -47,9 +47,11 @@ const HeroSection = () => {
             <img src={landingImage} className='size-full object-cover rounded-full shadow-xl will-change-transform -rotate-2 z-10' />
             {/* <img src={framePhoto} className='size-[550px] object-cover object-center absolute -translate-x-2 -rotate-[90deg] will-change-transform z-0' /> */}
           </div>
-          <img src={yellowDivider} className='w-32 md:w-60 my-5 animate-text'/>
-          <div className='text-center text-4xl md:text-6xl font-quicksand mb-4 animate-text will-change-transform opacity-0 translate-y-20'>Wening & Leo</div>
-          <div className='text-base text-center md:text-3xl font-quicksand animate-text will-change-transform opacity-0 translate-y-20'>We're Getting Married!</div>
+          <img src={yellowDivider} className='w-32 md:w-60 my-5 animate-text' />
+          <div className='text-center text-4xl md:text-6xl tracking-tighter font-quicksand mb-4 animate-text will-change-transform opacity-0 translate-y-20'>Wening & Leo</div>
+          <div className='text-xs text-center md:text-base font-quicksand animate-text will-change-transform opacity-0 translate-y-20 w-[70%]'>
+            Setelah ini, kasih dan cinta itu sendiri yang menjadi permulaan, perjalanan, serta batas menggenapi. <br /> <span>Pernikahan, pilihan yang akan kami rayakan setiap pagi dan syukuri di ujung hari.</span>
+          </div>
         </div>
       </div>
       <div>
