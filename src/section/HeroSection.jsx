@@ -49,7 +49,7 @@ const HeroSection = () => {
           </div>
           <img src={yellowDivider} className='w-32 md:w-60 my-5 animate-text' />
           <div className='text-center text-4xl md:text-6xl tracking-tighter font-quicksand mb-4 animate-text will-change-transform opacity-0 translate-y-20'>Wening & Leo</div>
-          <div className='text-xs text-center md:text-base font-quicksand animate-text will-change-transform opacity-0 translate-y-20 w-[70%]'>
+          <div className='text-xs text-center md:text-base font-quicksand animate-text will-change-transform opacity-0 translate-y-20 w-[70%] italic'>
             Setelah ini, kasih dan cinta itu sendiri yang menjadi permulaan, perjalanan, serta batas menggenapi. <br /> <span>Pernikahan, pilihan yang akan kami rayakan setiap pagi dan syukuri di ujung hari.</span>
           </div>
         </div>
