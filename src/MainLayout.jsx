@@ -1,4 +1,4 @@
-import React, { Component, useRef, useState } from 'react'
+import React, { Component, useEffect, useRef, useState } from 'react'
 import HeroSection from './section/HeroSection'
 import CouplesSection from './section/CouplesSection'
 import QuotesSection from './section/QuotesSection'
@@ -6,9 +6,9 @@ import GuestInvitationSection from './section/GuestInvitationSection'
 import TimelineSection from './section/TimelineSection'
 import gsap from 'gsap'
 import { FaArrowRight } from 'react-icons/fa'
-import basePatternSvg from './assets/image/base-pattern.svg'
 import HopeSection from './section/HopeSection'
-
+import { useParams } from 'react-router-dom'
+import { useStore } from './store'
 
 const MainComponent = () => {
     return (
@@ -26,8 +26,12 @@ const DynamicComponent = ({ children }) => {
 }
 
 const MainLayout = () => {
+    const slug = useParams().slug
+    console.log(slug)
+
     const [disabledOpenButton, setDisabledOpenButton] = useState(false)
     const [disabledNextButton, setDisabledNextButton] = useState(true)
+    // const [guestData, setGuestData] = useState({})
     const guestInvitation = useRef(null)
     const quotes = useRef(null)
     const openButton = useRef(null)
@@ -35,6 +39,26 @@ const MainLayout = () => {
     const nextButton = useRef(null)
     const coupleLogo = useRef(null)
     const [dynamicComponent, setDynamicComponent] = useState(<GuestInvitationSection ref={guestInvitation} />)
+    const setGuestData = useStore((state) => state.setGuestData)
+
+
+    const fetchGuestData = async () => {
+        try {
+            const response = await fetch('https://rovyoso.sga.dom.my.id/api/guest/' + slug)
+            if (!response.ok) {
+                throw new Error(`Error: ${response.status}`);
+            }
+            const result = await response.json();
+            console.log(result)
+            setGuestData(result.data)
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+    useEffect(() => {
+        fetchGuestData()
+    }, [])
 
     const handleOpenInvitation = () => {
         guestInvitation.current.handleButtonClick()
@@ -44,7 +68,7 @@ const MainLayout = () => {
         })
 
         gsap.to(coupleLogo.current, {
-            opacity:0, duration: 1, ease: 'sine.inOut', delay: 1, zIndex: 0
+            opacity: 0, duration: 1, ease: 'sine.inOut', delay: 1, zIndex: 0
         })
 
         setDisabledOpenButton(true)
@@ -59,19 +83,19 @@ const MainLayout = () => {
 
         setDisabledNextButton(false)
         gsap.to(nextButton.current, {
-            opacity:1, duration: 1, ease: 'sine.inOut', delay: 6, zIndex: 30
+            opacity: 1, duration: 1, ease: 'sine.inOut', delay: 6, zIndex: 30
         })
     }
 
     const handleNextAction = () => {
-        quotes.current.handleDissapear()      
+        quotes.current.handleDissapear()
 
         setTimeout(() => {
             setDynamicComponent(<MainComponent />)
         }, 1500)
 
         gsap.to(nextButton.current, {
-            opacity:0, duration: 1, ease: 'sine.inOut', zIndex: 0
+            opacity: 0, duration: 1, ease: 'sine.inOut', zIndex: 0
         })
         setDisabledNextButton(true)
     }

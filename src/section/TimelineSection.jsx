@@ -16,6 +16,7 @@ import { FaArrowRight, FaCalendar, FaExternalLinkAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import gsap from 'gsap'
+import { useStore } from '../store.jsx'
 
 const TimelineSection = () => {
     const left1 = useRef(null)
@@ -26,6 +27,7 @@ const TimelineSection = () => {
     const event2 = useRef(null)
     const container = useRef(null)
     const note = useRef(null)
+    const guestData = useStore((state) => state.guestData)
 
     const data = [
         {
@@ -48,6 +50,14 @@ const TimelineSection = () => {
         },
     ]
 
+    let timeSession
+
+    if (guestData.sesi == 1) {
+        timeSession = '18:00 WIB'
+    } else if (guestData.sesi == 2) {
+        timeSession = '19:00 WIB'
+    }
+
     const mainData = [
         {
             "action": "Sakramen Perkawinan",
@@ -61,7 +71,7 @@ const TimelineSection = () => {
         {
             "action": "Resepsi",
             "date": "Sabtu, 15 Juni 2024",
-            "time": "18:00 WIB",
+            "time": timeSession,
             "location": "Joglo Adyatma +50",
             "address": "Jl. Bunga Ilalang, Sidorejo, Tegal Onggobayan, RT 007, Ngestiharjo, Kasihan, Bantul, Daerah Istimewa Yogyakarta",
             "maps": "https://maps.app.goo.gl/WoEoenmDx63GHa6Y7",
