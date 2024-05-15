@@ -21,7 +21,7 @@ export const getGuestData = async ({ slug }) => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Root />,
     errorElement: <div className='w-full h-screen justify-center flex text-center text-8xl font-bold items-center bg-red-400 text-white'>404 Not Found</div>,
     children: [
