@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import './font.css'
 import MainLayout from './MainLayout'
-import Root from './root'
+import Root from './Root'
 import {
   createBrowserRouter,
   RouterProvider,
