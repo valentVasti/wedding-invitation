@@ -7,7 +7,6 @@ import Root from './Root'
 import {
   createBrowserRouter,
   RouterProvider,
-  useParams,
 } from "react-router-dom";
 
 const BASE_URL = 'https://127.0.0.1:8000/'
