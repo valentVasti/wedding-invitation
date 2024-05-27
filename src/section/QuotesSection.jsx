@@ -99,7 +99,7 @@ const QuotesSection = forwardRef((props, ref) => {
     return (
         <section ref={container} className='bg-white w-full h-screen md:h-52 lg:h-screen flex flex-col justify-center items-center relative gap-3 overflow-hidden'>
             <div ref={quotes} className='opacity-0 w-[250px] md:w-[600px] lg:w-[900px] text-center h-full flex flex-col justify-center items-center gap-5 tracking-wide text-2xl z-10 font-serif will-change-transform md:text-xl lg:text-5xl'>
-                <div className='leading-tight'>"Tuhan membuat segala sesuatu indah pada waktu-Nya. Indah saat Ia mempertemukan, indah saat Ia menumbuhkan kasih, dan indah saat Ia mempersatukan putra-putri kami dalam ikatan pernikahan kudus."</div>
+                <div className='leading-tight'>"Tuhan membuat segala sesuatu indah pada waktunya. Indah saat Ia mempertemukan, indah saat Ia menumbuhkan kasih, dan indah saat Ia mempersatukan putra-putri kami dalam ikatan pernikahan kudus."</div>
             </div>
             <img ref={basePattern} src={basePatternSvg} className='h-full w-full object-cover absolute top-0 z-0 will-change-transform transform' />
 
