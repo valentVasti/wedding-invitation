@@ -41,14 +41,14 @@ const HeroSection = () => {
         </div>
         <img ref={background} src={basePatternSvg} className='scale-[1.15] opacity-0 h-full w-full object-cover absolute top-0 z-0 will-change-transform' />
 
-        <div className='relative top-0 text-black bg-transparent h-full w-full flex flex-col justify-center items-center z-30'>
+        <div className=' relative top-0 text-black bg-transparent h-full w-full flex flex-col justify-center items-center z-30'>
           {/* <img src={yellowBird} className='h-10 mb-6 object-cover md:hidden' /> */}
           <div ref={coupleImage} className='opacity-0 size-[250px] md:size-[500px] flex relative justify-center items-center z-20 bg-transparent will-change-transform translate-y-[20]'>
             <img src={landingImage} className='size-full object-cover rounded-full shadow-xl will-change-transform -rotate-2 z-10' />
             {/* <img src={framePhoto} className='size-[550px] object-cover object-center absolute -translate-x-2 -rotate-[90deg] will-change-transform z-0' /> */}
           </div>
           <img src={yellowDivider} className='w-32 md:w-60 my-5 animate-text' />
-          <div className='text-center text-4xl md:text-6xl tracking-tighter font-quicksand mb-4 animate-text will-change-transform opacity-0 translate-y-20'>Wening & Leo</div>
+          <div className='text-center text-4xl md:text-6xl tracking-tighter font-quicksand mb-4 animate-text will-change-transform opacity-0 translate-y-20'>Dewi & Dimas</div>
           <div className='text-xs text-center md:text-base font-quicksand animate-text will-change-transform opacity-0 translate-y-20 w-[70%] italic'>
             Setelah ini, kasih dan cinta itu sendiri yang menjadi permulaan, perjalanan, serta batas menggenapi. <br /> <span>Pernikahan, pilihan yang akan kami rayakan setiap pagi dan syukuri di ujung hari.</span>
           </div>

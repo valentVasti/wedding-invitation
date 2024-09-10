@@ -133,9 +133,9 @@ const CouplesSection = () => {
                 <div ref={couple1} id="couple-1" className="lg:h-fit h-1/2 w-full flex flex-col justify-center items-center gap-2 lg:gap-4 font-serif z-20 will-change-transform overflow-hidden">
                     <img src={wening} className='object-cover rounded-full size-44 md:size-52 lg:size-80 md:mb-3 lg:mb-8 shadow-2xl' />
                     <div className='w-full h-1/3 flex flex-col justify-center items-center gap-1'>
-                        <div className='text-md md:text-3xl lg:text-3xl text-center'>Eugenia Tyaswening Kristiasancti,  S.Pt., MBA</div>
+                        <div className='text-md md:text-3xl lg:text-3xl text-center'>Dewi Anggraini Putri,  S.Pt., MBA</div>
                         <hr className='border-yellow-palette w-44 md:w-64' />
-                        <div className="text-xs md:text-sm lg:text-lg">Putri Pertama <br />Bapak Dr. Ir. Andreas Wahyu Krisdiarto, M. Eng dan <br/>Ibu Dra. Maria Titi Purwaningsih</div>
+                        <div className="text-xs md:text-sm lg:text-lg">Putri Pertama <br />Bapak Cahyo Wibowo Saputra dan <br/>Ibu Bunga Sari Lestari</div>
                     </div>
                 </div>
                 <div ref={animatePattern1Container} id="pattern1" className="absolute top-0 md:top-10 lg:-top-[120px] -right-28 md:-right-16 size-[200px] md:size-[250px] lg:size-[300px] scale-y-[-1] flex justify-center items-center z-10">
@@ -163,9 +163,9 @@ const CouplesSection = () => {
                 <div ref={couple2} id="couple-2" className="lg:h-fit h-1/2 w-full flex flex-col justify-center items-center gap-2 lg:gap-4 font-serif z-20 will-change-transform">
                     <img src={leo} className='object-cover rounded-full size-44 md:size-52 lg:size-80 md:mb-3 lg:mb-8 shadow-2xl' />
                     <div className='w-full h-1/3 flex flex-col justify-center items-center gap-1'>
-                        <div className='text-md md:text-3xl lg:text-3xl text-center'>Leonardus Firstanto Padmatirta, S.Fil</div>
+                        <div className='text-md md:text-3xl lg:text-3xl text-center'>Dimas Setiawan Kusuma, S.Fil</div>
                         <hr className='border-yellow-palette w-44 md:w-64' />
-                        <div className="text-xs md:text-sm lg:text-lg">Putra Pertama <br />Bapak Yoseph Arie Sixtioso L dan <br/> Ibu Margaretha Padmi Rahayu</div>
+                        <div className="text-xs md:text-sm lg:text-lg">Putra Pertama <br />Bapak Eko Nugroho Pratama dan <br/> Ibu Elina Maharani Dewanti</div>
                     </div>
                 </div>
             </div>

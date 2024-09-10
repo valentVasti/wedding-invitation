@@ -40,7 +40,9 @@ const MainLayout = () => {
     const coupleLogo = useRef(null)
     const [dynamicComponent, setDynamicComponent] = useState(<GuestInvitationSection ref={guestInvitation} />)
     const setGuestData = useStore((state) => state.setGuestData)
+    const guestData = useStore((state) => state.guestData)
 
+    console.log(guestData)
 
     const fetchGuestData = async () => {
         try {
@@ -106,7 +108,7 @@ const MainLayout = () => {
             <DynamicComponent children={dynamicComponent} />
             <button disabled={disabledOpenButton} ref={openButton} className='font-quicksand opacity-100 z-20 w-fit h-fit rounded-full py-2 px-3 bg-white-palette fixed left-1/2 bottom-[20%] -translate-x-1/2' onClick={handleOpenInvitation}>Buka Undangan</button>
             <button disabled={disabledNextButton} ref={nextButton} className='opacity-0 z-10 rounded-full py-2 px-3 bg-yellow-palette fixed left-1/2 bottom-[20%] -translate-x-1/2 size-10 flex justify-center items-center shadow-xl text-white' onClick={handleNextAction}><FaArrowRight /></button>
-            <div ref={coupleLogo} className='opacity-100 z-20 size-16 md:size-20 flex justify-center items-center rounded-full py-2 px-3 bg-yellow-palette fixed left-1/2 -translate-x-1/2 top-[35%] md:top-[26%] md:text-xl shadow-xl text-white font-watermint gap-1'><span className='font-serif'>W</span>&<span className='font-serif'>L</span></div>
+            <div ref={coupleLogo} className='opacity-100 z-20 size-16 md:size-20 flex justify-center items-center rounded-full py-2 px-3 bg-yellow-palette fixed left-1/2 -translate-x-1/2 top-[35%] md:top-[26%] md:text-xl shadow-xl text-white font-watermint gap-1'><span className='font-serif'>D</span>&<span className='font-serif'>D</span></div>
         </section>
     )
 }

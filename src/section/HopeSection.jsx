@@ -53,11 +53,11 @@ const HopeSection = () => {
             <div ref={text} className='opacity-0 relative z-20 text-white flex justify-center items-center flex-col top-44 md:top-32 will-change-transform'>
                 <h1 className='text-3xl md:text-6xl font-lt-perfume text-center'>"Kehadiran dan doa restu Anda <br /> merupakan kebahagiaan bagi kami."</h1>
                 <hr className='border-1 border-yellow-palette w-[85%] md:w-[45%] my-3' />
-                <p className='font-quicksand text-xl md:text-3xl mt-3'>Wening & Leo</p>
+                <p className='font-quicksand text-xl md:text-3xl mt-3'>Dewi & Dimas</p>
                 <div className='mt-5 font-quicksand text-xs md:text-sm space-y-1 text-center w-80 md:w-full'>
                     <p>Kami yang berbahagia</p>
-                    <p>Kel. Bapak Dr. Ir. Andreas Wahyu Krisdiarto, M. Eng dan Ibu Dra. Maria Titi Purwaningsih</p>
-                    <p>Kel. Bapak Yoseph Arie Sixtioso L dan Ibu Margaretha Padmi Rahayu</p>
+                    <p>Kel. Bapak Cahyo Wibowo Saputra dan Ibu Cahyo Wibowo Saputra</p>
+                    <p>Kel. Bapak Eko Nugroho Pratama dan Ibu Elina Maharani Dewanti</p>
                 </div>
             </div>
             <div ref={overlay} className='opacity-0 bg-black size-full absolute top-0 left-0 z-10 will-change-transform'></div>
